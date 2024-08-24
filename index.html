@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="unified-bar">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Serch Anything" class="text-bar">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="dropdown">
+                <select name ="city">
+                    <option value="Everything">Everything</option>
+                    <option value="software developer">software developer</option>
+                    <option value="web ddeveloper">web ddeveloper</option>
+                    <option value="data analytist">data analytist</option>
+                    <option value="it consultant">it consultant</option>
+            
+            
+                </select>
+            
+                
+                </div>
+            </div>
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+</body>
+</html>
+#css
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ed7fe2; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 1px;
+}
+
+.unified-bar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff; 
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    display:flex;
+    border-radius: 100px;
+    justify-content: centre;
+}
+
+.text-bar {
+    width: 90%;
+    padding: 10px;
+    padding-right: 30px; 
+    border: 1px solid rgb(228, 194, 194) ;
+    border-radius: 100px;
+    background-color: #f9f9f9; 
+    margin:0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 0.3cm;
+}
+
+.dropbtn {
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9; 
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; 
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:whiy; 
+}
+
+.dropdown-content a:hover {
+    background-color:white; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-btn {
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+
